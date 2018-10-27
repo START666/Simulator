@@ -1,5 +1,9 @@
+import java.util.Queue;
+
 public class ComputingAccessPoint extends Machine {
-    public ComputingAccessPoint(String address, int maxMemorySize) {
-        super(address, maxMemorySize);
+    Queue<Task> taskQueue;
+
+    public ComputingAccessPoint(String address, int maxMemorySize, int computingPower) {
+        super(address, maxMemorySize, computingPower);
     }
 }

@@ -1,5 +1,9 @@
+import java.util.Queue;
+
 public class Server extends Machine {
-    public Server(String address, int maxMemorySize) {
-        super(address, maxMemorySize);
+
+    Queue<Task> taskQueue;
+    public Server(String address, int maxMemorySize, int computingPower) {
+        super(address, maxMemorySize,computingPower);
     }
 }
